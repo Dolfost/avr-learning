@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 3.25)
 
 set(PROG_TYPE usbasp)
 set(MCU       atmega168a)

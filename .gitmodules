@@ -1,0 +1,3 @@
+[submodule "AVR-Programming"]
+	path = AVR-Programming
+	url = https://github.com/hexagon5un/AVR-Programming
