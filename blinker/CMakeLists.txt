@@ -16,8 +16,8 @@ target_include_directories(${do_nothing_ELF_TARGET} PUBLIC src)
 avr_add_executable(blinker)
 target_compile_definitions(${blinker_ELF_TARGET} 
 	PRIVATE 
-		F_CPU=1000000
-		BAUD=9600
+		F_CPU=${F_CPU}
+		BAUD=${BAUD}
 )
 target_sources(${blinker_ELF_TARGET} 
 	PRIVATE
