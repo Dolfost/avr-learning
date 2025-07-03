@@ -2,12 +2,17 @@ cmake_minimum_required(VERSION 3.25)
 
 project(avr-learning)
 
-set(AVR_PROGRAMMER usbasp)
-set(AVR_MCU        atmega168a)
 set(AVR_APPEND_PLATFORM_TO_ARTIFACTS YES)
 
 set(F_CPU 1000000)
 set(BAUD  9600)
+add_compile_definitions(
+		F_CPU=${F_CPU}
+		BAUD=${BAUD}
+)
+add_compile_options(-Os)
 
 add_subdirectory(blinker)
 add_subdirectory(pov_toy)
+add_subdirectory(cyclon_eye)
+add_subdirectory(bit_showoff)

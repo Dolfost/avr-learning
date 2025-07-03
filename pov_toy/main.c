@@ -4,7 +4,7 @@
 void disp(uint16_t bytes) {
 	PORTB = bytes;
 	PORTD = bytes >> 8;
-	_delay_ms(2);
+	_delay_ms(10);
 }
 
 int main(void) {
