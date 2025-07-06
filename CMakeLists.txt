@@ -12,6 +12,10 @@ add_compile_definitions(
 )
 add_compile_options(-Os)
 
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+	add_definitions("-DDEBUG")
+endif()
+
 add_subdirectory(blinker)
 add_subdirectory(pov_toy)
 add_subdirectory(cyclon_eye)
@@ -19,3 +23,5 @@ add_subdirectory(bit_showoff)
 add_subdirectory(buzzer)
 add_subdirectory(serial_loopback)
 add_subdirectory(serial_organ)
+add_subdirectory(button)
+add_subdirectory(debouncer)
