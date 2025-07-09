@@ -26,9 +26,8 @@ int main(void) {
   while (1) {
     ADCSRA |= (1 << ADSC);
     sample = ADCH;
-		usart_print_byte(sample);
-		usart_print_string("\r\n");
-		//  NOTE: needs clock to wait so we could do it 44100 times a second
+		usart_transmit_byte(sample);
+		// _delay_us(10);
   }
   return 0;
 }
