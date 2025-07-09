@@ -29,3 +29,4 @@ add_subdirectory(debouncer)
 add_subdirectory(music_box)
 add_subdirectory(avrtools) # tools
 add_subdirectory(light_sensor)
+add_subdirectory(usart_audio_recorder)
