@@ -16,6 +16,7 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 	add_definitions("-DDEBUG")
 endif()
 
+
 add_subdirectory(blinker)
 add_subdirectory(pov_toy)
 add_subdirectory(cyclon_eye)
@@ -26,3 +27,5 @@ add_subdirectory(serial_organ)
 add_subdirectory(button)
 add_subdirectory(debouncer)
 add_subdirectory(music_box)
+add_subdirectory(avrtools) # tools
+add_subdirectory(light_sensor)
