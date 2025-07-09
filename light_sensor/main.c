@@ -8,7 +8,7 @@
 #include <avrtools/speaker.h>
 
 
-static inline void initADC0(void) {
+static inline void init_ADC0(void) {
   ADMUX |= (1 << REFS0);
   ADCSRA |= (1 << ADPS2);
   ADCSRA |= (1 << ADEN);
@@ -20,7 +20,7 @@ int main(void) {
   uint8_t i;
 
 
-  initADC0();
+  init_ADC0();
 #ifdef DEBUG 
 	usart_init();
 #endif
@@ -47,7 +47,6 @@ int main(void) {
 		usart_print_string("\n\r");
 #endif
 
-    _delay_ms(50);
   }
   return 0;
 }
