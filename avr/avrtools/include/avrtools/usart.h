@@ -40,6 +40,12 @@ void usart_print_long(long num);
  * @param num input integer
  */
 void usart_print_int(int num);
+/**
+ * @brief Convert `uint8_t` to `char[]` and send it over USART
+ *
+ * @param byte input byte
+ */
+void usart_print_byte(uint8_t byte);
 
 
 static inline void usart_init() { 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
 
-project(avr-learning)
+project(avr-learning-avr)
 
 set(AVR_APPEND_PLATFORM_TO_ARTIFACTS YES)
 

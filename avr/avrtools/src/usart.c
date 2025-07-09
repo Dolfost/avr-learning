@@ -29,3 +29,9 @@ void usart_print_long(long num) {
 	ltoa(num, str, 10);
 	usart_print_string(str);
 }
+
+void usart_print_byte(uint8_t byte) {
+  usart_transmit_byte('0' + (byte / 100));
+  usart_transmit_byte('0' + ((byte / 10) % 10));
+  usart_transmit_byte('0' + (byte % 10));
+}
