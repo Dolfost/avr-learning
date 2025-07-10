@@ -1,11 +1,11 @@
 If:
   PathMatch: avr/.*
-
 CompileFlags:
   CompilationDatabase: build/avr
 
-If:
-  PathMath: pc/.*
+---
 
-CompileFlags:
+If:
+  PathMatch: pc/.*
+CompileFlags: 
   CompilationDatabase: build/pc
