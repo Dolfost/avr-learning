@@ -4,8 +4,8 @@ project(avr-learning-avr)
 
 set(AVR_APPEND_PLATFORM_TO_ARTIFACTS YES)
 
-set(F_CPU 1000000)
-set(BAUD  9600)
+set(F_CPU 1000000UL)
+set(BAUD 9600)
 add_compile_definitions(
 		F_CPU=${F_CPU}
 		BAUD=${BAUD}
@@ -33,3 +33,5 @@ add_subdirectory(usart_audio_recorder)
 add_subdirectory(night_light)
 add_subdirectory(ldr_plotter)
 add_subdirectory(hello_interrupt)
+add_subdirectory(cap_sense)
+add_subdirectory(piezo_pressure_sensor_plotter)
