@@ -8,5 +8,3 @@ target_sources(${usart_audio_recorder_ELF_TARGET}
 		main.c
 )
 target_link_libraries(${usart_audio_recorder_ELF_TARGET} avrtools::avrtools)
-
-unset(CMAKE_TOOLCHAIN_FILE)

@@ -6,7 +6,7 @@
 
 #define SPEAKER_DDR DDRD
 #define SPEAKER_PORT PORTD
-#define SPEAKER 3
+#define SPEAKER 2
 
 #define BUTTON_PORT PORTD
 #define BUTTON_DDR DDRD
