@@ -12,5 +12,7 @@ target_sources(${avrtools_ELF_TARGET}
 		include/avrtools/usart.h
 		include/avrtools/button.h
 		include/avrtools/speaker.h
+		include/avrtools/scale16.h
+		include/avrtools/scale8.h
 )
 add_library(avrtools::avrtools ALIAS ${avrtools_ELF_TARGET})
