@@ -22,11 +22,8 @@ static inline void playNote(uint8_t period, uint16_t duration) {
 }
 
 int main(void) {
-  // -------- Inits --------- //
   initTimer();
-  // ------ Event loop ------ //
   while (1) {
-                                                    /* Play some notes */
     playNote(C2, 200);
     playNote(E2, 200);
     playNote(G2, 200);
@@ -37,6 +34,6 @@ int main(void) {
     // _delay_ms(1000);
     _delay_ms(1000);
 
-  }                                                  /* End event loop */
-  return 0;                            /* This line is never reached */
+  }
+  return 0;
 }
