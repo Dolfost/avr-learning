@@ -11,7 +11,7 @@
 #include <avrtools/usart.h>
 
 #define SENSE_TIME 100
-#define THRESHOLD 830
+#define THRESHOLD 1250
 
 volatile uint32_t chargeCycleCount;
 
